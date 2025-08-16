@@ -1,3 +1,70 @@
-<html>  
-    g
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container mt-4">
+    <h1>Bienvenido a tu perfil</h1>
+    <h2>Información personal</h2>
+    <h3>Detalles básicos</h3>
+
+    <p id="intro">Este es tu perfil personalizado.</p>
+    <a href="https://www.google.com">Ir a Google</a> |
+    <a href="demo-api-rest.html">Ver clima</a>
+
+    <img src="https://via.placeholder.com/150" alt="Foto de perfil" id="foto" class="img-thumbnail">
+
+    <h4>Lista de intereses</h4>
+    <ul id="lista-intereses">
+        <li>Programación</li>
+        <li>Diseño web</li>
+    </ul>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <table class="table table-bordered mt-3">
+        <thead>
+            <tr><th>Campo</th><th>Valor</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Nombre</td><td>César</td></tr>
+            <tr><td>Email</td><td>cesar@email.com</td></tr>
+        </tbody>
+    </table>
+
+    <form id="formulario" class="mt-4">
+        <div class="mb-3">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <button id="btn-bienvenida" class="btn btn-success mt-3">Mostrar bienvenida</button>
+    <button id="btn-color" class="btn btn-warning mt-3">Cambiar fondo</button>
+    <button id="btn-agregar" class="btn btn-info mt-3">Agregar a lista</button>
+    <button id="btn-cambiar-texto" class="btn btn-secondary mt-3">Cambiar texto</button>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>
